@@ -1,0 +1,38 @@
+html
+  head
+    title update
+  style.
+      #g {
+      border-radius: 25px;
+      
+      
+      }
+      #h {
+      border-radius: 25px;
+      background: #73AD21;
+      width:200px;
+      height:50px;
+      }
+  body
+  each item in data
+    form(method='post', action='/update')
+      table(width='800px')
+      
+        tr
+          th ID
+          td=item.id
+          td
+              input#g(type='hidden', name='id', value=item.id)
+        |    
+        tr
+          th User Name
+          td
+              input#g(type='text', name='userName', value=item.user_name)
+        |    
+        tr
+          th Password
+          td
+              input#g(type='text', name='password', value=item.password)
+      |   
+      center
+        input#h(type='submit', name='jhvb', value='update')

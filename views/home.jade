@@ -1,0 +1,41 @@
+center
+ h1= title
+style.
+
+ #h {
+ border-radius: 25px;
+ background: orange;
+ width:100px;
+ height:30px;
+ }
+ h1 {
+ color:red;
+ }
+ p {
+ color:gray;
+ }
+center
+ p Welcome 
+  b #{sess.username} 
+ 
+center 
+  a(href='/logout')  
+   input#h(type='submit', name='jhvb', value='LOGOUT')
+
+ table
+      tr
+        td
+          | for 
+          a(href='/insert')  Insert 
+          |  ur Login details click here,...
+      |    
+      tr
+        td
+          | for 
+          a(href='/views')  View
+          |  ur Login 	details click here,...
+      |    
+      
+
+    
+ 

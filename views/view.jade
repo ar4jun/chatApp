@@ -1,0 +1,40 @@
+html
+	head
+		title hgv
+	
+	style.
+		    #h {
+		        border-radius: 25px;
+		        background: #73AD21;
+		        width:100px;
+			    height:30px;
+			    }
+			   
+
+	a(href='home') 
+			input#h(type='submit', name='jhvb', value='BACK')
+
+	body
+	h1  USER DETAILS
+	center
+	table(border='2', width='800px')
+		tr
+			th ID
+			th User Name
+			th Passwoprd
+			th Delete
+      
+		each item in data
+			tr
+				td=item.id
+				td=item.user_name
+				td=item.password
+				td
+					a(href='/delete?id=' + item.id) Delete
+					br
+					a(href='/update?id=' + item.id) update
+
+
+
+
+
